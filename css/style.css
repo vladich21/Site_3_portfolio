@@ -36,6 +36,10 @@ li{
     line-height: 25px;
     white-space: nowrap;
 }
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
 .container{
     width: 100%;
     max-width: 1370px;
@@ -241,6 +245,59 @@ li{
     top: 226px;
     right: 0;
 }
+.video {
+    padding: 229px 0 177px 0;
+    background-color: #245852;
+}
+.video_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video_flex-text {
+    margin-right: 32px;
+}
+.video_h2 {
+    color: #FFF;
+    font-size: 50px;
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    line-height: 160%;
+    max-width: 580px;
+    margin: 0 0 33px 0;
+}
+.video_p {
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 157%;
+    margin: 0 0 57px 0;
+}
+.video_size {
+    width: 896px;
+    height: 516px;
+}
+.video_btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.video_poster {
+    position: relative;
+}
+.video-icon {
+    position: absolute;
+    top: 219px;
+    right: 406px;
+}
+.video-icon:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* .video_poster:hover{
+    opacity: 0.6;
+} */
 @media screen and (max-width: 1919px) {
     .header {
         background-position: center;
@@ -284,6 +341,15 @@ li{
     }
     .header_btn {
         margin-left: 30px;
+    }
+    .video {
+        padding-top: 100px;
+    }
+    .video_flex {
+        flex-direction: column;
+    }
+    .video_flex-text {
+        margin: 0 0 50px 0;
     }
 }
 @media screen and (max-width: 1500px) {
@@ -333,6 +399,20 @@ li{
     }
     .steps_flex_content-items:nth-child(3) {
         margin-left: 200px;
+    }
+    .video_flex {
+        align-items: flex-start;
+        padding-left: 80px;
+    }
+    .video_size {
+        width: 500px;
+        height: 288px;
+    }
+    .video-icon {
+        width: 60px;
+        height: 60px;
+        top: 108px;
+        right: 216px;
     }
 }
 @media screen and (max-width: 731px) {
@@ -393,6 +473,25 @@ li{
     }
     .steps_flex_content-items:nth-child(3) {
         margin-right: 0;
+    } 
+    .video_flex {
+        padding-left: 40px;
+    }
+    .video_h2 {
+        font-size: 30px;
+    }
+    .video_p {
+        font-size: 20px;
+    }
+    .video_size {
+        width: 300px;
+        height: 173px;
+    }
+    .video-icon {
+        width: 30px;
+        height: 30px;
+        top: 77px;
+        right: 135px;
     }
 }
 @media screen and (max-width: 460px) {
